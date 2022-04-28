@@ -1,1 +1,1 @@
-# mechacar-statistical-analysis
+# Statistics and R
