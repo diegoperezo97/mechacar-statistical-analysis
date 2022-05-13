@@ -1,0 +1,86 @@
+---
+title: "Back to School"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Dependency
+```{r}
+library(tidyverse)
+```
+### Read CSV file
+```{r}
+students <-read_csv("/Users/diegoperezo97/Documents/Tecnológico de Monterrey – Data Analytics Boot Camp/mechacar-statistical-analysis/Monday, April 4th 2022/15-1-Student_Resources/06_Evr_Tibble/Resources/students.csv")
+```
+### Preview tibble
+```{r}
+head(students)
+```
+
+### A list of all schools
+```{r}
+# unique(dataset, variable) displays unique elements from that column
+unique(students$school_name)
+```
+
+### Calculate the total count of schools
+```{r}
+schools <- unique(students$school_name)
+# Use length() to identify the number of schools
+length(schools)
+print(paste("There are", length(schools), "schools"))
+```
+
+### Calculate the total number of students
+```{r}
+# nrow() returns the number of rows
+student_count <- nrow(students)
+paste("There are a total of", student_count, "students.")
+```
+
+### Calculate the average reading and math scores
+```{r}
+mean_reading_score <- summarize(students, mean(reading_score))
+paste("The average reading score is", mean_reading_score)
+
+mean_math_score <- summarize(students, mean(math_score))
+paste("The average math score is", mean_math_score)
+```
+
+### Calculate the percentage of students with passing reading scores
+### equal to or greater than 70%.
+```{r}
+passing_reading <- filter(students, reading_score >= 70)
+passing_reading_count <- nrow(passing_reading)
+percentage_passing_reading <- (passing_reading_count * 100)/student_count
+paste(percentage_passing_reading, "% of the students have passing reading scores.")
+```
+
+### Calculate the percentage of students with passing math scores,
+### equal to or greater than 70%.
+```{r}
+
+
+paste(percentage_passing_math, "% of the students have passing math scores.")
+```
+
+### Calculate the percentage of overall passing equal to or greater than 70%.
+```{r}
+
+
+paste(percentage_passing_overall, "% of the students have passing math and reading scores.")
+```
+
+### Calculate the average math and reading scores by school
+```{r}
+school_groups <- group_by(students, school_name)
+summarize(school_groups, avg_math=mean(math_score), avg_read=mean(reading_score))
+```
+
+### Calculate the average math and reading scores by grade level at each school
+```{r}
+
+```

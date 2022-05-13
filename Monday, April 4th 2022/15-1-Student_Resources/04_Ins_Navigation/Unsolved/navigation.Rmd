@@ -1,0 +1,24 @@
+---
+title: "Navigation"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Dependency
+```{r}
+library(tidyverse)
+```
+
+### Read in the data.csv file
+```{r}
+df <- read.csv("/Users/diegoperezo97/Documents/Tecnológico de Monterrey – Data Analytics Boot Camp/mechacar-statistical-analysis/Monday, April 4th 2022/15-1-Student_Resources/04_Ins_Navigation/Resources/data.csv")
+```
+
+### Print out the top rows in the data.csv file  
+```{r}
+head(df)
+```
+
