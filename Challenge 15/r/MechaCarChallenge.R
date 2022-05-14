@@ -44,9 +44,3 @@ t.test(suspensionCoil$PSI, mu=1500)
 t.test(suspensionCoil[suspensionCoil$Manufacturing_Lot == "Lot1",]$PSI, mu=1500)
 t.test(suspensionCoil[suspensionCoil$Manufacturing_Lot == "Lot2",]$PSI, mu=1500)
 t.test(suspensionCoil[suspensionCoil$Manufacturing_Lot == "Lot3",]$PSI, mu=1500)
-  
-  
-  
-  
-  
-  
