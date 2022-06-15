@@ -1,5 +1,19 @@
 # MODULE 15: Statistics and R
 
+I'll learn statistics and R in this program, which are two critical abilities for my success in the data sector. Data analytics is built on statistics. All the way to complicated deterministic models, starting with summary statistics like mean, median, and mode.
+
+We contextualize our facts with the aid of statistics. When it comes to making well-informed judgments, statistics plays a crucial part in everything from product creation to sports betting, stock market research, and movie production. In the business environment, statisticians frequently serve as the company's go-to individuals for problem-solving, resource planning, and decision-making.
+
+I will go through summary statistics and regression models in this session before moving on to more complex statistical models and measurements that are frequently used in data analytics.
+
+The ability to construct statistical research and understand study findings will allow me to tackle increasingly complex challenges involving data engineering. I'll spend some time in this lesson learning how to utilize the computer language R in order to better understand these statistical ideas.
+
+Data management, statistical analysis, and visualization were all made more comfortable by R. R has established itself as one of the most widely used tools for data analysis and reporting among the community of data scientists throughout time. Numerous firms, from tiny family enterprises to the biggest Fortune 500 companies like Google, Ford, and Coca-Cola, employ R. The majority of job postings for data science and data engineering clearly include R competence as either a necessary or highly desirable ability. 
+
+I will go through the fundamentals of R in this lesson, including how to read datasets, manipulate data, do computations, and visualize data using a variety of 2D plots.
+
+I'll also execute all of my statistical tests and analyses using R. I'll be able to create my own R scripts at the conclusion of this module so that I can fully analyze any dataset.
+
 ## Overview of the Analysis
 
 * For the past ten years, Jeremy has been with AutosRUs. He's seen a lot of automobiles come and go in his time, and the corporation is now understanding that their decision-making process should be modernized.
